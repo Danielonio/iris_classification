@@ -16,14 +16,12 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 def main():
-    print('Loading dataset')
+   print('Loading dataset')
+    url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
     names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-    dataset = read_csv('iris.csv', names=names)
+    dataset = read_csv(url, names=names)
     print('Data set loaded')
-    # shape
-    print(dataset.shape)
-    # head
-    print(dataset.head(20))
+
 
 if __name__ == '__main__':
     main()
