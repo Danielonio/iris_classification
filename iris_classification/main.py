@@ -24,6 +24,10 @@ def main():
     print(dataset.shape)
     # head
     print(dataset.head(20))
+    # descriptions
+    print(dataset.describe())
+    # class distribution
+    print(dataset.groupby('class').size())
 
 if __name__ == '__main__':
     main()
